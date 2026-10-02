@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astera Studio | Premium Web Design</title>
+    <meta
+      name="description"
+      content="Astera Studio creates premium digital experiences, premium brand design, and high-converting websites for modern businesses."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f4f2ff',
+                100: '#eae5ff',
+                200: '#cec0ff',
+                300: '#b19aff',
+                400: '#8a6ce6',
+                500: '#725ad6',
+                600: '#5d4ab5',
+                700: '#4b3c8f',
+                800: '#31275f',
+                900: '#1d153a'
+              }
+            },
+            boxShadow: {
+              glow: '0 0 0 1px rgba(255,255,255,0.08), 0 20px 40px rgba(114,90,214,0.35)',
+              soft: '0 18px 42px rgba(15,23,42,0.28)'
+            },
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <div class="bg-grid">
+      <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/75 backdrop-blur-xl">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-400 to-fuchsia-500 shadow-glow">
+              <span class="text-lg font-black">A</span>
+            </div>
+            <div>
+              <div class="text-lg font-bold tracking-wide">Astera</div>
+              <div class="text-[10px] uppercase tracking-[0.25em] text-slate-400">Studio</div>
+            </div>
+          </a>
+
+          <div class="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
+            <a href="index.html" class="text-white transition hover:text-brand-200">Home</a>
+            <a href="about.html" class="transition hover:text-brand-200">About</a>
+            <a href="contact.html" class="transition hover:text-brand-200">Contact</a>
+            <a href="signin.html" class="transition hover:text-brand-200">Sign In</a>
+            <a href="signup.html" class="rounded-full border border-brand-400/40 bg-brand-500/10 px-4 py-2 text-brand-100 transition hover:border-brand-300 hover:bg-brand-500/20">Create Account</a>
+          </div>
+
+          <button id="mobile-menu-button" class="rounded-xl border border-white/10 p-2 text-slate-200 md:hidden" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden border-t border-white/10 bg-slate-950 md:hidden">
+          <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 text-sm text-slate-300">
+            <a href="index.html" class="hover:text-white">Home</a>
+            <a href="about.html" class="hover:text-white">About</a>
+            <a href="contact.html" class="hover:text-white">Contact</a>
+            <a href="signin.html" class="hover:text-white">Sign In</a>
+            <a href="signup.html" class="rounded-full bg-brand-500 px-4 py-2 text-center font-medium text-white">Create Account</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="relative overflow-hidden">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(138,108,230,0.35),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(236,72,153,0.22),_transparent_18%)]"></div>
+          <div class="relative mx-auto grid max-w-7xl gap-14 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-28">
+            <div class="space-y-8">
+              <div class="inline-flex items-center gap-2 rounded-full border border-brand-300/20 bg-brand-500/10 px-3 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-brand-100">
+                <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                Trusted by growth brands
+              </div>
+
+              <div class="space-y-6">
+                <h1 class="max-w-xl text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
+                  Design that turns attention into action.
+                </h1>
+                <p class="max-w-xl text-lg leading-8 text-slate-300">
+                  Premium web experiences for ambitious founders, elevated brands, and teams ready to stand out online.
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-4 sm:flex-row">
+                <a href="signup.html" class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-500 to-fuchsia-500 px-6 py-3 text-base font-semibold text-white shadow-glow transition hover:scale-[1.02]">Start a project</a>
+                <a href="about.html" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-base font-semibold text-white transition hover:border-brand-300 hover:bg-brand-500/10">See our process</a>
+              </div>
+
+              <div class="flex flex-col gap-6 pt-2 sm:flex-row sm:items-center">
+                <div class="flex -space-x-3">
+                  <div class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-slate-950 bg-gradient-to-br from-brand-400 to-fuchsia-500 text-sm font-bold">A</div>
+                  <div class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-slate-950 bg-gradient-to-br from-amber-300 to-orange-500 text-sm font-bold">K</div>
+                  <div class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-slate-950 bg-gradient-to-br from-cyan-300 to-blue-500 text-sm font-bold">N</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-white">4.9/5</div>
+                  <div class="text-sm text-slate-300">Average client satisfaction</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative mx-auto w-full max-w-xl">
+              <div class="absolute -left-10 top-10 h-20 w-20 rounded-full bg-fuchsia-500/30 blur-3xl"></div>
+              <div class="absolute -right-6 bottom-16 h-24 w-24 rounded-full bg-brand-400/30 blur-3xl"></div>
+
+              <div class="relative overflow-hidden rounded-[28px] border border-white/10 bg-slate-900/80 p-4 shadow-soft backdrop-blur-xl">
+                <div class="rounded-[22px] border border-white/10 bg-slate-950/70 p-5">
+                  <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                    <div>
+                      <p class="text-xs uppercase tracking-[0.22em] text-slate-400">Campaign</p>
+                      <h2 class="mt-2 text-2xl font-bold text-white">Q4 Launch</h2>
+                    </div>
+                    <span class="rounded-full border border-emerald-400/40 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-300">+42.3%</span>
+                  </div>
+
+                  <div class="mt-6 space-y-4">
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <div class="flex items-center justify-between text-sm text-slate-300">
+                        <span>Conversion</span>
+                        <span class="font-semibold text-white">8.4%</span>
+                      </div>
+                      <div class="mt-4 h-2.5 rounded-full bg-slate-800">
+                        <div class="h-2.5 w-[78%] rounded-full bg-gradient-to-r from-brand-400 to-fuchsia-500"></div>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                      <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Leads</p>
+                        <p class="mt-3 text-3xl font-black text-white">2.4k</p>
+                      </div>
+                      <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Revenue</p>
+                        <p class="mt-3 text-3xl font-black text-white">$94k</p>
+                      </div>
+                    </div>
+
+                    <div class="rounded-2xl border border-brand-400/20 bg-brand-500/10 p-4">
+                      <div class="flex items-center justify-between">
+                        <div>
+                          <p class="text-xs uppercase tracking-[0.22em] text-brand-100/80">Insight</p>
+                          <p class="mt-2 text-lg font-semibold text-white">Landing page variant B is outperforming.</p>
+                        </div>
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/20 text-xl">↗</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mb-10 flex items-end justify-between gap-4">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-200">Trusted by visionary teams</p>
+              <h2 class="mt-3 text-3xl font-black text-white sm:text-4xl">Built for brands that want a premium edge.</h2>
+            </div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div class="panel p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/15 text-brand-200">⚡</div>
+              <h3 class="mt-5 text-xl font-bold text-white">Strategy-first design</h3>
+              <p class="mt-3 text-slate-300">Beautiful interfaces anchored in conversion goals, messaging clarity, and user intent.</p>
+            </div>
+
+            <div class="panel p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-fuchsia-500/15 text-fuchsia-200">✦</div>
+              <h3 class="mt-5 text-xl font-bold text-white">Luxury branding</h3>
+              <p class="mt-3 text-slate-300">Distinct identity systems, premium visual language, and polished digital experiences.</p>
+            </div>
+
+            <div class="panel p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-500/15 text-cyan-200">▦</div>
+              <h3 class="mt-5 text-xl font-bold text-white">High-converting UX</h3>
+              <p class="mt-3 text-slate-300">Intuitive flows, frictionless forms, and performance-oriented page architecture.</p>
+            </div>
+
+            <div class="panel p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/15 text-emerald-200">◎</div>
+              <h3 class="mt-5 text-xl font-bold text-white">Ongoing optimization</h3>
+              <p class="mt-3 text-slate-300">Data-backed enhancements that evolve your growth engine over time.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+            <div class="panel overflow-hidden p-8">
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-200">Why clients choose us</p>
+              <h3 class="mt-4 text-3xl font-black text-white">A partner for premium growth.</h3>
+              <ul class="mt-8 space-y-5 text-slate-300">
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>Tailored digital strategy and positioning guidance</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>Conversion-focused design with high-end polish</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>Responsive, accessible experiences across every device</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>Speedy delivery with clear communication and support</li>
+              </ul>
+              <a href="contact.html" class="mt-8 inline-flex rounded-full border border-brand-300/30 bg-brand-500/10 px-5 py-3 font-semibold text-brand-100 transition hover:bg-brand-500/20">Book a discovery call</a>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="panel p-6">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-slate-400">Project scope</span>
+                  <span class="rounded-full bg-brand-500/10 px-2 py-1 text-xs font-semibold text-brand-100">Brand</span>
+                </div>
+                <h4 class="mt-5 text-2xl font-bold text-white">Luxury product site</h4>
+                <p class="mt-3 text-slate-300">Enhanced visual hierarchy, premium copy blocks, and a conversion flow designed for premium buyers.</p>
+                <div class="mt-6 h-2.5 rounded-full bg-slate-800">
+                  <div class="h-2.5 w-[84%] rounded-full bg-gradient-to-r from-brand-400 to-fuchsia-500"></div>
+                </div>
+              </div>
+
+              <div class="panel p-6">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-slate-400">Design system</span>
+                  <span class="rounded-full bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-200">UI</span>
+                </div>
+                <h4 class="mt-5 text-2xl font-bold text-white">Cohesive visual language</h4>
+                <p class="mt-3 text-slate-300">Reusable components, elegant motion cues, and brand-safe design consistency across touchpoints.</p>
+                <div class="mt-6 flex gap-2">
+                  <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Tailwind</span>
+                  <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">UX</span>
+                  <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Brand</span>
+                </div>
+              </div>
+
+              <div class="panel p-6 md:col-span-2">
+                <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                  <div>
+                    <p class="text-sm text-slate-400">Growth dashboard</p>
+                    <h4 class="mt-2 text-2xl font-bold text-white">Performance snapshot</h4>
+                  </div>
+                  <span class="rounded-full border border-emerald-400/40 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-200">Up 28%</span>
+                </div>
+
+                <div class="mt-6 grid gap-4 sm:grid-cols-3">
+                  <div class="rounded-2xl bg-slate-900/70 p-4">
+                    <p class="text-xs uppercase tracking-[0.18em] text-slate-400">Traffic</p>
+                    <p class="mt-3 text-3xl font-black text-white">184k</p>
+                  </div>
+                  <div class="rounded-2xl bg-slate-900/70 p-4">
+                    <p class="text-xs uppercase tracking-[0.18em] text-slate-400">CTR</p>
+                    <p class="mt-3 text-3xl font-black text-white">6.8%</p>
+                  </div>
+                  <div class="rounded-2xl bg-slate-900/70 p-4">
+                    <p class="text-xs uppercase tracking-[0.18em] text-slate-400">Sales</p>
+                    <p class="mt-3 text-3xl font-black text-white">$250k</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mb-10 text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-200">Client stories</p>
+            <h2 class="mt-4 text-3xl font-black text-white sm:text-4xl">Loved by founders and modern teams.</h2>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-3">
+            <div class="panel p-6">
+              <div class="flex items-center gap-1 text-amber-300">★★★★★</div>
+              <p class="mt-5 text-slate-200">“Astera elevated our brand from average to premium. The site immediately felt more credible and our conversion rate jumped within weeks.”</p>
+              <div class="mt-6 flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-400 to-fuchsia-500 font-bold text-white">M</div>
+                <div>
+                  <p class="font-semibold text-white">Mia Brooks</p>
+                  <p class="text-sm text-slate-400">Founder, Northstar</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel p-6">
+              <div class="flex items-center gap-1 text-amber-300">★★★★★</div>
+              <p class="mt-5 text-slate-200">“The process was clear, fast, and strategic. Every page felt aligned with our story and our audience — high end without feeling flashy.”</p>
+              <div class="mt-6 flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 font-bold text-white">D</div>
+                <div>
+                  <p class="font-semibold text-white">Daniel Lee</p>
+                  <p class="text-sm text-slate-400">Marketing Lead, Woven</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel p-6">
+              <div class="flex items-center gap-1 text-amber-300">★★★★★</div>
+              <p class="mt-5 text-slate-200">“We wanted premium without complexity. They delivered a sleek UX, clean storytelling, and a polished experience that helped us close more deals.”</p>
+              <div class="mt-6 flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 font-bold text-white">S</div>
+                <div>
+                  <p class="font-semibold text-white">Sofia Reed</p>
+                  <p class="text-sm text-slate-400">CEO, Ember & Co</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+          <div class="rounded-[32px] border border-brand-300/20 bg-gradient-to-r from-brand-500/15 via-slate-900 to-fuchsia-500/15 p-8 md:p-12">
+            <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.26em] text-brand-100">Ready to launch?</p>
+                <h2 class="mt-4 text-3xl font-black text-white sm:text-4xl">Build a digital presence people remember.</h2>
+              </div>
+              <div class="flex flex-col gap-3 sm:flex-row">
+                <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-semibold text-slate-900 transition hover:scale-[1.02]">Book discovery</a>
+                <a href="signup.html" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10">Create account</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-white/10 bg-slate-950/80">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr] lg:px-8">
+          <div>
+            <div class="flex items-center gap-3">
+              <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-400 to-fuchsia-500 shadow-glow">
+                <span class="text-lg font-black">A</span>
+              </div>
+              <div>
+                <div class="text-lg font-bold">Astera</div>
+                <div class="text-[10px] uppercase tracking-[0.25em] text-slate-400">Studio</div>
+              </div>
+            </div>
+            <p class="mt-4 max-w-sm text-slate-400">Premium design and growth experiences for brands ready to look sharper, feel stronger, and convert more.</p>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-300">Company</h3>
+            <ul class="mt-4 space-y-3 text-slate-400">
+              <li><a href="about.html" class="hover:text-white">About</a></li>
+              <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+              <li><a href="signup.html" class="hover:text-white">Sign Up</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-300">Resources</h3>
+            <ul class="mt-4 space-y-3 text-slate-400">
+              <li><a href="index.html" class="hover:text-white">Home</a></li>
+              <li><a href="signin.html" class="hover:text-white">Sign In</a></li>
+              <li><a href="contact.html" class="hover:text-white">Support</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-300">Newsletter</h3>
+            <form class="mt-4 flex flex-col gap-3">
+              <input type="email" placeholder="Your email" class="rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-300 focus:outline-none" />
+              <button type="submit" class="rounded-full bg-gradient-to-r from-brand-500 to-fuchsia-500 px-5 py-3 text-sm font-semibold text-white">Join updates</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-t border-white/10">
+          <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-4 py-5 text-sm text-slate-400 sm:px-6 lg:flex-row lg:px-8">
+            <p>© <span id="year"></span> Astera Studio. All rights reserved.</p>
+            <div class="flex gap-5">
+              <a href="#" class="hover:text-white">Privacy</a>
+              <a href="#" class="hover:text-white">Terms</a>
+              <a href="#" class="hover:text-white">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
